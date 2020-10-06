@@ -1,0 +1,15 @@
+<!--pages/notice/notice.wxml-->
+<view class="content">
+  <cu-custom bgColor="bg-gradual-blue" isCustom="{{true}}">
+     <view slot="quitText">退出</view>
+     <view slot="content">通知</view>
+  </cu-custom>
+  <view class="form">
+     <view class="row1">预警通知</view>
+     <view class="row2">2020.09.24 08：15 NOx排放超标</view>
+     <view class="row2">2020.09.24 12：37 PM排放超标1</view>
+  </view>
+  <bottom class="btom" style="position: fixed;bottom: 0px;" bint="2"></bottom>
+</view>
+
+

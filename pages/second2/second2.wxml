@@ -1,0 +1,42 @@
+<!--pages/second2/second2.wxml-->
+<view class="content">
+       <cu-custom bgColor="bg-gradual-blue" isCustom="{{true}}">
+           <view slot="quitText">退出</view>
+           <view slot="content">统计信息</view>
+       </cu-custom>
+       <!-- <view class="title">
+         <text>{{message}}</text>
+       </view> -->
+       <text style="display: block;font-size: 12px;padding-left:10px;margin-top:5px;">( 注：点击下列左侧三方块可查看数据详情。)
+       </text>
+       <view class="zukuai" style="margin-top: 10px;">
+          <view class="nav-li bg-pink" catchtap="no_all">
+            <text style="display: block;height:60%;line-height: 130px;">氮氧实时排放统计</text>
+          </view>
+          <view style="width:20px"></view>
+          <view class="nav-li bg-brown" catchtap="cannot">
+            <text style="display: block;height:60%;line-height: 110px;">尿素消耗总量</text>
+            <text style="display: block;">70%</text>
+          </view>
+       </view>
+       <view class="zukuai">
+          <view class="nav-li bg-purple" catchtap="klw_all">
+            <text style="display: block;height:60%;line-height: 130px;">颗粒物实时排放统计</text>
+          </view>
+          <view style="width:20px"></view>
+          <view class="nav-li bg-mauve" catchtap="cannot">
+            <text style="display: block;height:60%;line-height: 110px;">车辆总里程</text>
+            <text style="display: block;">14000km</text>
+          </view>
+       </view>
+       <view class="zukuai" style="margin-bottom: 55px">
+          <view class="nav-li bg-red" catchtap="carspeed" style="line-height: 130px;">车速统计</view>
+          <view style="width:20px">
+       </view>
+       <view class="nav-li bg-orange" catchtap="cannot">
+            <text style="display: block;height:60%;line-height: 110px;">油耗统计</text>
+            <text style="display: block;">7.11L</text>
+       </view>
+    </view>
+</view>
+<bottom_admin class="btom" bint="2" style="position: fixed;bottom: 0px;"></bottom_admin>

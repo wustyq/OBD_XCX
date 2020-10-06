@@ -1,0 +1,116 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}" urlBack="/pages/second2/second2">
+        <view slot="backText">返回</view>
+        <view slot="content">车速统计</view>
+</cu-custom>
+<view class="content">
+     <view class="box">
+       <!-- 1 -->
+       <view class="box1" style="height: 300px;position: relative;">
+          <!-- 2 -->
+          <view style="position: relative;height:290px;top: 10px;">
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;left:20px;border-top: 4px solid rgb(0, 217, 255);"></text>
+            <text style="position: absolute;border-right: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;right:20px;border-top: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;left:20px;border-bottom: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-bottom: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;right:20px;border-right: 4px solid rgb(0, 217, 255);"></text>
+            <ec-canvas class="container" id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecTwo }}" style="width:330px; height:270px;margin-left:5%"></ec-canvas>
+          </view>
+       </view>
+       
+       <!-- 4 -->
+       <view class="box2" style="height: 480px;margin-bottom: 80px;overflow: hidden;">
+          <van-cell title="选择单个日期" value="{{ date }}" bind:click="onDisplay" class="dt" style="margin:10px auto 0px"/>
+          <van-calendar style="z-index:9999;" show="{{ show }}" default-date='{{ currentDate }}' bind:close="onClose" bind:confirm="onConfirm" color="#078fed"/>
+          <view  style="position: relative;height:435px;top: 10px;">
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;left:20px;border-top: 4px solid rgb(0, 217, 255);"></text>
+            <text style="position: absolute;border-right: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;right:20px;border-top: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:20px;left:20px;border-bottom: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-bottom: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:20px;right:20px;border-right: 4px solid rgb(0, 217, 255);"></text>
+            <view class="in">
+                 <input placeholder="请输入VIN"></input>
+                 <text class="cuIcon-search" style="font-size: 20px;border-left: 1px solid gray;padding: 2px;"></text>
+            </view>
+            <scroll-view scroll-y='true' scroll-x='true' class="in_scroll">
+                <view style="height: 25px;">
+                   <text style="background-color: gray; width: 80px">车主</text>
+                   <text style="background-color: gray;border-left: 1px solid #000000;width: 100px">车牌号</text>
+                   <text style="background-color: gray;border-left: 1px solid #000000;width: 150px">VIN</text>
+                   <text style="background-color: gray;border-left: 1px solid #000000;width: 80px">排放阶段</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+                <view style="height: 25px;">
+                   <text style=" width: 80px;">易*</text>
+                   <text style=" border-left: 1px solid #000000;width: 100px">鄂A123456</text>
+                   <text style=" border-left: 1px solid #000000;width: 150px">VIN88855599966677</text>
+                   <text style=" border-left: 1px solid #000000;width: 80px">国Ⅴ</text>
+                </view>
+            </scroll-view>
+          </view>
+        </view>
+     </view>
+</view>
+<bottom_admin class="btom" bint="2" style="position: fixed;bottom: 0px;"></bottom_admin>

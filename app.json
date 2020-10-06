@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/pm/pm",
+    "pages/ns/ns",
+    "pages/rl/rl",
+    "pages/map/map",
+    "pages/more/more",
+    "pages/notice/notice",
+    "pages/second/second",
+    "pages/my/my",
+    "pages/no_all/no_all",
+    "pages/no/no",
+    "pages/klw_all/klw_all",
+    "pages/count/count",
+    "pages/carspeed/carspeed",
+    "pages/second2/second2",
+    "pages/second_admin/second_admin",
+    "pages/my_admin/my_admin"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "bottom": "/colorui/bottom/bottom",
+    "bottom_admin": "/colorui/bottom_admin/bottom",
+    "vant-btn": "./vant-weapp/dist/button/index",
+    "van-cell": "./vant-weapp/dist/cell/index",    
+    "van-calendar": "./vant-weapp/dist/calendar/index",
+    "van-field": "./vant-weapp/dist/field/index",
+    "van-dropdown-menu": "./vant-weapp/dist/dropdown-menu/index",
+    "van-dropdown-item": "./vant-weapp/dist/dropdown-item/index",
+    "ec-canvas": "./ec-canvas/ec-canvas"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,45 @@
+<!--pages/my/my.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isCustom="{{true}}">
+     <view slot="quitText">退出</view>
+     <view slot="content">我的</view>
+</cu-custom>
+<view class="content" catchtouchmove='blank'>
+  <view class="page-body">
+     <view class="box3">
+         <text>已有<text style="font-size: 25px;color:blue;display: inline-block;width:45px;padding-left:5px;">101</text>位用户使用监管平台</text>
+     </view>
+     <view class="box4">
+         <view class="txt">
+            <view class="box4-txt">
+               <text style="padding-left:10px;">账户信息</text>
+               <text style="padding-right:10px;text-align: right;">admin</text>
+            </view>
+            <view class="box4-txt">
+               <text style="padding-left:10px;">修改密码</text>
+               <text style="padding-right:10px;text-align: right;">******</text>
+            </view>
+            <view class="box4-txt">
+               <text style="padding-left:10px;">绑定手机号</text>
+               <text style="padding-right:10px;text-align: right;">131****2230</text>
+            </view>
+            <view class="box4-txt">
+               <text style="padding-left:10px;">意见反馈</text>
+               <!-- <text style="padding-right:10px;text-align: right;">admin</text> -->
+            </view>
+            <view class="box4-txt">
+               <text style="padding-left:10px;">帮助</text>
+               <!-- <text style="padding-right:10px;text-align: right;">admin</text> -->
+            </view>
+            <view class="box4-txt">
+               <text style="padding-left:10px;">分享</text>
+               <!-- <text style="padding-right:10px;text-align: right;">admin</text> -->
+            </view>
+            <view style="text-align:center;margin-top:10px;">
+               <text style="font-size: 14px;">@武科检测中心</text>
+               <!-- <text style="padding-right:10px;text-align: right;">admin</text> -->
+            </view>
+         </view>
+     </view>
+  </view>
+  <bottom_admin class="btom" bint="3" style="position: fixed;bottom: 0px;"></bottom_admin>
+</view>

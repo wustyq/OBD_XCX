@@ -1,0 +1,38 @@
+<!--pages/second/second.wxml-->
+<view class="content">
+       <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}" urlBack="/pages/count/count">
+           <view slot="backText">返回</view>
+           <view slot="content">车辆状态</view>
+       </cu-custom>
+       <view class="title">
+         <text>{{message}}</text>
+       </view>
+       <view class="zukuai" style="margin-top: 25px;">
+          <view class="nav-li bg-pink" catchtap="rl">
+            <text style="display: block;height:60%;line-height: 120px;">油箱液位</text>
+            <text style="display: block;">70%</text>
+          </view>
+          <view style="width:20px"></view>
+          <view class="nav-li bg-brown" catchtap="ns">
+            <text style="display: block;height:60%;line-height: 120px;">尿素箱液位</text>
+            <text style="display: block;">70%</text>
+          </view>
+       </view>
+       <view class="zukuai">
+          <view class="nav-li bg-purple" catchtap="pm">
+            <text style="display: block;height:60%;line-height: 120px;">PM超标次数</text>
+            <text style="display: block;">7次</text>
+          </view>
+          <view style="width:20px"></view>
+          <view class="nav-li bg-mauve" catchtap="no">
+            <text style="display: block;height:60%;line-height: 120px;">NOx超标次数</text>
+            <text style="display: block;">7次</text>
+          </view>
+       </view>
+       <view class="zukuai" style="margin-bottom: 55px">
+          <view class="nav-li bg-red" catchtap="map" style="line-height: 130px;">行驶轨迹</view>
+          <view style="width:20px"></view>
+          <view class="nav-li bg-orange" catchtap="more" style="line-height: 130px;">更多信息...</view>
+       </view>
+       <bottom_admin class="btom" bint="1" style="position: fixed;bottom: 0px;"></bottom_admin>
+</view>

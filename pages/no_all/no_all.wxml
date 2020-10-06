@@ -1,0 +1,35 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}" urlBack="/pages/second2/second2">
+        <view slot="backText">返回</view>
+        <view slot="content">NOx排放</view>
+</cu-custom>
+<scroll-view scroll-y='true' class="content">
+     <view class="box">
+       <!-- 1 -->
+       <view class="box1" style="height: 390px;position: relative;">
+          <view class="cot">NOx超标车辆统计</view>
+          <!-- 2 -->
+          <van-cell title="选择日期区间" value="{{ date }}" bind:click="onDisplay" class="dt" style="margin: 5px auto 20px;"/>
+          <van-calendar style="z-index:9999;" show="{{ show }}" type="range" default-date="{{ currentDate }}"  bind:close="onClose" bind:confirm="onConfirm" color="#078fed"/>
+          <view style="position: relative;height:280px;">
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;left:20px;border-top: 4px solid rgb(0, 217, 255);"></text>
+            <text style="position: absolute;border-right: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;right:20px;border-top: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;left:20px;border-bottom: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-bottom: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;right:20px;border-right: 4px solid rgb(0, 217, 255);"></text>
+          <ec-canvas class="container" id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecTwo }}" style="width:330px; height:270px;margin-left: 10px;"></ec-canvas>
+          </view>
+       </view>
+       
+       <!-- 4 -->
+       <view class="box2" style="height: 350px;margin-bottom: 80px;">
+          <view class="cot" style="margin-bottom: 20px;">所有区域实时排放总量</view>
+          <view style="position: relative;height:290px;">
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;left:20px;border-top: 4px solid rgb(0, 217, 255);"></text>
+            <text style="position: absolute;border-right: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;right:20px;border-top: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;left:20px;border-bottom: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-bottom: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;right:20px;border-right: 4px solid rgb(0, 217, 255);"></text>
+            <ec-canvas class="container" id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecOne }}" style="width:330px; height:270px;margin-left: 20px;"></ec-canvas>
+          </view>
+        </view>
+     </view>
+</scroll-view>
+<bottom_admin class="btom" bint="2" style="position: fixed;bottom: 0px;"></bottom_admin>

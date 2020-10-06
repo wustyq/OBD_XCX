@@ -1,0 +1,44 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
+.content .box1{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px 15px;
+  height: 290px;
+  box-shadow: 5px 5px 6px 1px #888888;
+  border-radius: 10px;
+}
+.content .box2{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px 55px;
+  height: 420px;
+  box-shadow: 5px 5px 6px 1px #888888;
+  border-radius: 10px;
+}
+.content .cot {
+  width: 100%;
+  height: 23px;
+  font-size: 20px;
+  text-align: left;
+  line-height: 23px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 4px solid rgb(0, 217, 255);
+}
+.ring {
+  flex: 1;
+  margin: 50px auto 0;
+}
+van-cell.dt {
+  margin: 30px auto 20px;
+  width: 90%!important;
+  background-color: rgb(241, 241, 241)!important;
+  border-bottom: 1px solid gray;
+}
+.cl {
+  flex: 1;
+  margin: 30px auto 0;
+}

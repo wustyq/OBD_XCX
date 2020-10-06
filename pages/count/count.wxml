@@ -1,0 +1,105 @@
+<cu-custom bgColor="bg-gradual-blue" isCustom="{{true}}">
+        <view slot="quitText">退出</view>
+        <view slot="content">统计信息</view>
+</cu-custom>
+<view class="content">
+     <view class="box">
+       <!-- 1 -->
+       <view class="box1" style="height: 200px;position: relative;">
+          <!-- 2 -->
+          <view style="position: relative;height:180px;top: 10px;">
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;left:20px;border-top: 4px solid rgb(0, 217, 255);"></text>
+            <text style="position: absolute;border-right: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;right:20px;border-top: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;left:20px;border-bottom: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-bottom: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;right:20px;border-right: 4px solid rgb(0, 217, 255);"></text>
+            <text style="position: absolute;height:20px;top:10px;left: 60px;">PM超标率</text>
+            <text style="position: absolute;height:20px;top:10px;right:50px;">NOx超标率</text>
+            <text style="position: absolute;height:20px;top:45%;left: 75px;color:gray;font-size:20px;">70%</text>
+            <text style="position: absolute;height:20px;top:45%;right:65px;color:gray;font-size:20px;">70%</text>
+            <ec-canvas class="container" id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}" style="width:180px; height:180px;"></ec-canvas>
+            <ec-canvas class="container1" id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ecTwo }}" style="width:180px; height:180px;"></ec-canvas>
+          </view>
+       </view>
+       
+       <!-- 4 -->
+       <view class="box2" style="height: 480px;margin-bottom: 80px;overflow: hidden;">
+          <view  style="position: relative;height:465px;top: 10px;">
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;left:20px;border-top: 4px solid rgb(0, 217, 255);"></text>
+            <text style="position: absolute;border-right: 4px solid rgb(0, 217, 255);width:20px;height:20px;top:0;right:20px;border-top: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-left: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;left:20px;border-bottom: 4px solid rgb(0, 217, 255);"></text> 
+            <text style="position: absolute;border-bottom: 4px solid rgb(0, 217, 255);width:20px;height:20px;bottom:10px;right:20px;border-right: 4px solid rgb(0, 217, 255);"></text>
+            <view class="in">
+                 <input placeholder="请输入车牌号"></input>
+                 <text class="cuIcon-search" style="font-size: 20px;border-left: 1px solid gray;padding: 2px;"></text>
+            </view>
+            <scroll-view scroll-y='true' class="in_scroll">
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;background-color: gray;">车牌号</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;background-color: gray;border-left: 1px solid #000000">状态</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+                <view style="height: 25px;display:flex;border-bottom: 1px solid #000000" catchtap="detail">
+                   <text style="flex: 1;text-align:center;line-height: 25px;">鄂A1234567</text>
+                   <text style="flex: 1;text-align:center;line-height: 25px;border-left: 1px solid #000000">在线</text>
+                </view>
+            </scroll-view>
+          </view>
+        </view>
+     </view>
+</view>
+<bottom_admin class="btom" bint="1" style="position: fixed;bottom: 0px;"></bottom_admin>

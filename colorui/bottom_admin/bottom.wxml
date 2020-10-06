@@ -1,0 +1,5 @@
+<view class="out">
+  <text class="cuIcon-home lg text-gray {{bint == '1'?'bg':''}}" catchtap="zl">总览</text>
+  <text class="cuIcon-comment lg text-gray border {{bint == '2'?'bg':''}}" catchtap="ls">历史数据</text>
+  <text class="cuIcon-people lg text-gray {{bint == '3'?'bg':''}}" catchtap="wd">我的</text>
+</view>

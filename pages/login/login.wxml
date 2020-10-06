@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<cu-custom bgColor="bg-gradual-blue">
+<view slot="content">重型车监管APP</view>
+</cu-custom>
+<view class="container" style=" height: 100%;">
+  <view class="userinfo">
+    <text style="flex:1"></text>
+    <image class="userinfo-avatar" src="{{src}}" mode="{{item.mode}}"></image>
+    <text style="flex:1"></text>
+  </view>
+  <view class="box">
+    <view class="weui-cell__bd" style="margin: 30rpx 30rpx;border: 1px solid gray;padding-left:5px;display:flex;">
+      <text class="cuIcon-people" style="font-size: 48rpx;"></text>
+      <input class="weui-input" placeholder="登录名" bindinput="getdata" style="flex:1;margin-left:10px;font-size: 40rpx;"/>
+    </view>
+    <view class="weui-cell__bd" style="margin: 30rpx 30rpx;border: 1px solid gray;padding-left:5px;display:flex;">
+      <text class="cuIcon-form" style="font-size: 48rpx;"></text>
+      <input password  class="weui-input" placeholder="密码" bindinput="getvalue" style="flex:1;margin-left:10px;font-size: 40rpx;"/>
+    </view>
+    <view class="btn-area">
+      <button style="margin: 30rpx 30rpx" type="default" bindtap="submit">登录</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+.content .btom {
+  position: fixed;
+  bottom: 0px;
+}
+.content {
+  position: relative;
+}
+.content .btn1 {
+  margin-top: 10px;
+  position: absolute;
+  z-index: 9999;
+  background-color: royalblue;
+  font-size: 18px;
+}

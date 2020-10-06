@@ -1,0 +1,27 @@
+/* pages/second/second.wxss */
+.top{
+  padding: 10px;
+  height: 139px;
+}
+.zukuai {
+  display: flex;
+  padding: 10px;
+  width: 100vw;
+  height: 150px;
+  /* background-color: white; */
+}
+.nav-li {
+  flex: 1;
+  height: 100%;
+  width: 35vw;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 12rpx;
+  background-image: url(https://image.weilanwl.com/color2.0/cardBg.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 6px 1px #888888;
+}
+.nav-li text,.nav-li {
+  font-size: 18px;
+}

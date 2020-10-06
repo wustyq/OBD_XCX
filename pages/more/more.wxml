@@ -1,0 +1,58 @@
+<!--pages/more/more.wxml-->
+<view class="content">
+  <cu-custom wx:if="{{identity == '客户'}}" bgColor="bg-gradual-blue" isBack="{{true}}" urlBack="/pages/second/second">
+     <view slot="backText">返回</view>
+     <view slot="content">PM超标</view>
+  </cu-custom>
+  <cu-custom wx:elif="{{identity == '管理'}}" bgColor="bg-gradual-blue" isBack="{{true}}" urlBack="/pages/second_admin/second_admin">
+     <view slot="backText">返回</view>
+     <view slot="content">PM超标</view>
+  </cu-custom>
+  <view class="btn">
+     <view class="btn1 {{flag == 1?'bg':''}}" bindtap="click1">车辆信息</view>
+     <view class="btn2 {{flag == 2?'bg':''}}" bindtap="click2">监控信息</view>
+  </view>
+  <view wx:if="{{flag == 1}}" class="form1">
+     <view class="row1">车辆信息</view>
+     <view class="row2">车牌号：鄂A11111</view>
+     <view class="row2">VIN：VN147852369852</view>
+     <view class="row2">车主：李查查</view>
+     <view class="row2">联系电话：12358589696</view>
+     <view class="row2">排放阶段：国V</view>
+     <view class="row2">所属区域：洪山区</view>
+     <view class="row2">车辆类型：B11-重型普通半挂</view>
+     <view class="row2">车辆用途：空调车</view>
+     <view class="row2">出厂日期：1970-01-01 08:00:00</view>
+     <view class="row2">注册日期：1970-01-01 08:00:00</view>
+     <view class="row2">车辆品牌：*******</view>
+     <view class="row2">车辆型号：*******</view>
+     <view class="row2">发动机号：E*******</view>
+     <view class="row2">燃料类型：柴油</view>
+     <view class="row2">车辆质量：7700kg</view>
+     <view class="row2">排量：2.0T</view>
+     <view class="row2">额定功率：444kw</view>
+     <view class="row2">尿素箱容积：80L</view>
+  </view>
+  <view wx:elif="{{flag == 2}}" class="form2 " style="margin-bottom: 55px;">
+     <view class="row1">监控信息</view>
+     <view class="row2">车牌号：鄂A11111</view>
+     <view class="row2">VIN：VN147852369852</view>
+     <view class="row2">车主：李查查</view>
+     <view class="row2">经度：1144.14304</view>
+     <view class="row2">纬度：304.61088</view>
+     <view class="row2">所属区域：洪山区</view>
+     <view class="row2">车速：60km/h</view>
+     <view class="row2">发动机转速：2300rpm</view>
+     <view class="row2">大气压力：101kPa</view>
+     <view class="row2">发动机冷却液温度：90℃</view>
+     <view class="row2">SCR上游NOx浓度：-200</view>
+     <view class="row2">SCR下游NOx浓度：2000</view>
+     <view class="row2">尿素箱液位：70</view>
+     <view class="row2">颗粒物浓度：2.7</view>
+     <view class="row2">环保信息公开编码：******</view>
+  </view>
+     <!-- 3 -->
+     <bottom wx:if="{{identity == '客户'}}" class="btom" style="position: fixed;bottom: 0px;" bint="1"></bottom>
+       <bottom_admin wx:elif="{{identity == '管理'}}" class="btom" bint="1" style="position: fixed;bottom: 0px;"></bottom_admin>
+</view>
+

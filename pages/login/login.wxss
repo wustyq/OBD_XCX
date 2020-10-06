@@ -1,0 +1,43 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  background-image: url(http://up.wustcloud.com/admin/yuanchengxiaochengxu/imgs/login.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 15vh;
+}
+.userinfo {
+  display: flex;
+  align-items: center;
+}
+
+.userinfo-nickname{
+  display: inline-block;
+  font-size: 18px;
+  color: black;
+}
+.userinfo-avatar {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.usermotto {
+  margin-top: 200px;
+}
+.box {
+  /* border: 1px solid #0081ff; */
+  margin: 0 10px 0;
+  padding: 10px 0 10px;
+  margin-top: 20px;
+  background-color: rgba(248, 248, 248, .8);
+  border-radius: 5px;
+}
+.weui-cell__bd {
+  border: 0px!important;
+  border-bottom: 1px solid gray!important;
+}

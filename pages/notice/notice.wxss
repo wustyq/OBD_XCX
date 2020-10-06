@@ -1,0 +1,20 @@
+/* pages/notice/notice.wxss */
+.form {
+  font-size: 14px;
+  font-family: Microsoft YaHei, Microsoft YaHei-Normal;
+  font-weight: Normal;
+  text-align: left;
+  color: #777777;
+  line-height: 48px;
+}
+.row1 {
+  padding-left: 16px;
+  border-bottom: gray solid 1px;
+  height: 48px;
+  background-color: #E0E0E0;
+}
+.row2 {
+  padding-left: 16px;
+  border-bottom: gray solid 1px;
+  height: 48px;
+}
